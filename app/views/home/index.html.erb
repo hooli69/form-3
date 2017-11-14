@@ -1,0 +1,19 @@
+
+<ul>
+    <%if user_signed_in?%>
+        <li>
+            <%=link_to 'Sign Out', destroy_user_session_path, method: :delete%>
+        </li> 
+        <li>
+            <strong>Hello <%=current_user.email%>! Tu es déjà connecté!</strong>
+        </li>
+        
+    <%else%>
+        <h1>
+            Welcome on this website <br> Join us & click on the Sign Up button !
+        </h1>
+        <li class="index">
+            <%=link_to 'Sign Up', new_user_registration_path%>
+        </li>
+    <%end%>
+</ul>

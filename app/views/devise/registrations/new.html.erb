@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mint</title>
+</head>
+
+<body>
+  <div class="navbar">
+    <%= render 'layouts/header' %>
+  </div>
+  <div class="content">
+    <div class="logo">
+      <%= image_tag 'logo_footer.png', class: "azerty" %>
+    </div>
+
+    <div class="formulaire"> 
+
+      <div class="mini-logo">
+        <%= image_tag 'mini-logo.png', class: "footer_logo" %>
+      </div>
+      <div class="middle-text">
+        <p>One Account. <br>
+        Everything Intuit.</p>
+      </div>
+      <div class="sub-text">
+        <p>Create an account for all of Intuit's products including Mint. <a href="https://accounts-help.lc.intuit.com/questions/1582580-creating-an-account" class= "learn-more"><span class="under">Learn more</span></a></p>
+      </div>
+
+      <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+      <%= devise_error_messages! %>
+
+
+      <div class="field">
+        <p class="email">Email address</p>
+        <%= f.email_field :email, autofocus: true, class: "name_email" %>
+      </div>
+
+      <div class="field">
+        <p class="password">Password</p>
+        <% if @minimum_password_length %>
+        <% end %>
+        <%= f.password_field :password, autocomplete: "off", class: "name_email" %>
+      </div>
+
+      <div class="field">
+        <p class="phone">Phone (recommended)</p>
+        <%= f.phone_field :phone, class: "name_email" %>
+        <p class="minitext">Standard call, messaging or data rates may apply.</p>
+      </div>
+      <button type="submit" class="button-create">Create Account</button>
+      <% end %>
+      <br>
+      <p class="final-text"> By clicking Create Account, you agree to our <a href="https://www.mint.com/terms"><span class="under">License Agreement</span></a> and <a href="https://security.intuit.com/privacy"><span class="under">Privacy Statement</span></a></p>
+
+    </div>
+  </div>
+  <footer>
+    <%= render 'layouts/footer' %>
+  </footer>
+</body>
+</html>

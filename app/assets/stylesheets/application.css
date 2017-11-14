@@ -13,3 +13,195 @@
  *= require_tree .
  *= require_self
  */
+
+ *
+ {
+ 	font-family: helvetica;
+ }
+
+ body
+ {
+ 	background-color: #eceef1;
+ 	/* display: flex; */
+ 	justify-content: center;
+ 	align-items: center;
+ 	/* flex-direction: column; */
+ }
+
+ .navbar
+ {
+ 	width: 100%;
+ 	height: 70px;
+ 	padding-top: 2px;
+ 	position: fixed;
+ 	top: 0;
+ 	left: 0;
+ }
+
+ .navbar-text
+ {
+ 	display: flex;
+ 	justify-content: flex-end;
+ }
+
+.text-sign-in
+{
+font-size: 13px;
+color: #708090;
+text-decoration: none;
+padding-top: 6px;
+}
+
+ .button
+ {
+ 	font-size: 15px;
+ 	background:#0069CC;
+ 	color:#fff;
+ 	width:100px;
+ 	height: 40px;
+ 	border:none;
+ 	margin-right: 15px;
+ 	margin-top: 13px;
+ 	margin-left: 10px;
+ 	cursor: pointer;
+ }
+
+.content
+{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.logo
+{
+	filter: grayscale(100%);
+}
+
+.azerty
+{
+	width: 200px;
+	padding-top: 30px;
+
+}
+
+ .formulaire
+ {
+ 	color: dimgrey;
+ 	width: 360px;
+ 	height: 670px;
+ 	background-color: white;
+ 	border: solid 1px lightgrey;
+ 	padding: 20px;
+ }
+
+ .mini-logo
+ {
+ 	margin-top: 10px;
+ 	margin-left: 18px;
+ }
+
+.middle-text
+{
+	text-align: center;
+	font-size: 30px;
+}
+
+.sub-text
+{
+	text-align: center;
+}
+
+.email
+{
+	margin-top: 50px;
+}
+
+.name_email
+{ 
+	width: 97%;
+	padding: 8px;
+}
+
+.minitext
+{
+	margin-bottom: 10px;
+	font-size: 10px;
+}
+
+.button-create
+ {
+ 	font-size: 15px;
+ 	background:#0069CC;
+ 	color:#fff;
+ 	width: 95%;
+ 	padding: 10px;
+ 	height: 30%;
+ 	border:none;
+ 	margin-right: 15px;
+ 	margin-top: 13px;
+ 	margin-left: 10px;
+ 	cursor: pointer;
+ }
+
+.final-text
+{
+	text-align: center;
+	font-size: 13px;
+	color: silver;
+}
+
+.qwerty
+{
+	width: 80px;
+}
+
+footer
+{
+	display: flex;
+ 	height: 120px;
+ 	margin-left: 20%;
+ 	bottom: 0;
+ 	width: 60%;
+ 	margin-top: 30px;
+ 	text-align: center;
+ 	color: dimgrey;
+}
+
+a
+{
+	text-decoration: none;
+	color: dimgrey;
+
+}
+
+a:hover
+{
+	text-decoration: underline;
+}
+
+a:visited
+{
+	text-decoration: none;
+}
+
+.footer-link
+{
+	list-style: none;
+	text-decoration: none;
+	justify-content: center;
+	font-size: 13px;
+}
+
+.footer-text
+{
+	display: flex;
+	font-size: 13px;
+	justify-content: center;
+}
+
+.under
+{
+	text-decoration: underline;
+}
+
